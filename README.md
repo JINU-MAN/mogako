@@ -7,13 +7,12 @@
 >추가적인 공부가 필수적일 것 같다.
 ***
 #### 모각코 2주차
->모바일 프로그래밍 팀 프로젝트를 위한 역할 분담 세부사항과 앞으로의 일정 회의를 했다. 
->항상 과제나 문제만 풀다가 개발을 하려고 하니 잘할 수 있을지 걱정이 된다.
->그리고 FFT 라이브러리를 사용하기 위해 소리 데이터를 입력 받을 AudioRecord 함수를 공부했다.
->public AudioRecord(int audioSource, int sampleRateInHz, int channelConfig, int audioFormat, int bufferSizeInBytes)
->AudioRecord의 생성자를 보면 인자를 5개 받는다는 것을 알 수 있다.
->첫 번째 인자는 어떤 소리 데이터를 사용할 것인지에 대한 인자로 마이크로 입력받기 위해서는 1을 넣어주면 된다.
->두 번째 인자는 초당 몇개의 sample을 추출할 것인지에 대한 인자로 값이 커질수록 고음질이 된다. 우리는 음질이 좋을 필요가 없으니 낮은 값을 사용해도 될 것 같다.
->세 번째 인자인 channel값은 mono/streo 중 선택하는 데 우리는 입체적인 음향이 필요 없으니 mono를 넣으면 될 것 같다.
->네 번째 인자는 FFT 라이브러리에서 PCM데이터가 필요하므로  AudioFormat.ENCODING_PCM_16BIT를 넣는다.
->다섯 번째 인자는 한번에 전달 받을 audio data 의 크기를 나타내고, 보통은 AudioRecord 의 getMinBufferSize 함수를 호출해서 return 되는 값으로 지정한다고 한다.
+>모바일 프로그래밍 팀 프로젝트를 위한 역할 분담 세부사항과 앞으로의 일정 회의를 했다.    항상 과제나 문제만 풀다가 개발을 하려고 하니 잘할 수 있을지 걱정이 된다.
+>   그리고 FFT 라이브러리를 사용하기 위해 소리 데이터를 입력 받을 AudioRecord 함수를 공부했다.
+>   public AudioRecord(int audioSource, int sampleRateInHz, int channelConfig, int audioFormat, int bufferSizeInBytes)
+>   AudioRecord의 생성자를 보면 인자를 5개 받는다는 것을 알 수 있다.
+>   첫 번째 인자는 어떤 소리 데이터를 사용할 것인지에 대한 인자로 마이크로 입력받기 위해서는 1을 넣어주면 된다.
+>   두 번째 인자는 초당 몇개의 sample을 추출할 것인지에 대한 인자로 값이 커질수록 고음질이 된다. 우리는 음질이 좋을 필요가 없으니 낮은 값을 사용해도 될 것 같다.
+>   세 번째 인자인 channel값은 mono/streo 중 선택하는 데 우리는 입체적인 음향이 필요 없으니 mono를 넣으면 될 것 같다.
+>   네 번째 인자는 FFT 라이브러리에서 PCM데이터가 필요하므로  AudioFormat.ENCODING_PCM_16BIT를 넣는다.
+>   다섯 번째 인자는 한번에 전달 받을 audio data 의 크기를 나타내고, 보통은 AudioRecord 의 getMinBufferSize 함수를 호출해서 return 되는 값으로 지정한다고 한다.
