@@ -7,7 +7,8 @@
 >추가적인 공부가 필수적일 것 같다.
 ***
 #### 모각코 2주차
->모바일 프로그래밍 팀 프로젝트를 위한 역할 분담 세부사항과 앞으로의 일정 회의를 했다. 항상 과제나 문제만 풀다가 개발을 하려고 하니 잘할 수 있을지 걱정이 된다.
+>모바일 프로그래밍 팀 프로젝트를 위한 역할 분담 세부사항과 앞으로의 일정 회의를 했다. 
+>항상 과제나 문제만 풀다가 개발을 하려고 하니 잘할 수 있을지 걱정이 된다.
 >그리고 FFT 라이브러리를 사용하기 위해 소리 데이터를 입력 받을 AudioRecord 함수를 공부했다.
 >public AudioRecord(int audioSource, int sampleRateInHz, int channelConfig, int audioFormat, int bufferSizeInBytes)
 >AudioRecord의 생성자를 보면 인자를 5개 받는다는 것을 알 수 있다.
