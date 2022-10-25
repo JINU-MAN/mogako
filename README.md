@@ -16,3 +16,11 @@
 >     세 번째 인자인 channel값은 mono/streo 중 선택하는 데 우리는 입체적인 음향이 필요 없으니 mono를 넣으면 될 것 같다.
 >     네 번째 인자는 FFT 라이브러리에서 PCM데이터가 필요하므로  AudioFormat.ENCODING_PCM_16BIT를 넣는다.
 >     다섯 번째 인자는 한번에 전달 받을 audio data 의 크기를 나타내고, 보통은 AudioRecord 의 getMinBufferSize 함수를 호출해서 return 되는 값으로 지정한다고 한다.
+***
+#### 모각코 3주차
+>컴퓨터 구조 스터디를 했다. instruction으로부터의 입력값이 달라짐에 따라 control회로에서 어떤 output이 나오는지에 관해 공부했다.
+>R타입의 경우 op코드가 000000이고 [5-0] funct의 값에 따라 ALUcontrol에서 ALU회로에서 어떤 동작을 해야할지 알려준다.
+>add의 경우 ALUcontrol의 값이 0010, sub는 0110 and는 0000 or은 0001 slt는 0111이다
+>lw인스트럭션의 경우 op코드가 100011이고 funct의 값은 신경쓰지 않는다 ALUcontrol은 add와 동일하게 0010이다.
+>sw인스트럭션은 op코드가 101011인 것만 제외하면 lw인스트럭션의 경우와 같다.
+>beq인스트럭션의 op코드는 000100이고 funct의 값은 신경쓰지 않고 ALUcontrol의 값은 0110이다.
