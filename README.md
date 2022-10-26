@@ -24,3 +24,10 @@
 >lw인스트럭션의 경우 op코드가 100011이고 funct의 값은 신경쓰지 않는다 ALUcontrol은 add와 동일하게 0010이다.
 >sw인스트럭션은 op코드가 101011인 것만 제외하면 lw인스트럭션의 경우와 같다.
 >beq인스트럭션의 op코드는 000100이고 funct의 값은 신경쓰지 않고 ALUcontrol의 값은 0110이다.
+***
+#### 모각코 4주차
+>모바일 프로그래밍 개인과제에서 회원가입과 로그인을 위한 정보를 저장하는 preference에 대해 공부했다.
+>프레퍼런스는 회원가입과 로그인 등 데이터의 양이 많이 필요하지 않은 간단한 작업에 적합하다.
+>getSharedPreferences()로 선언하고 데이터를 저장/편집하기 위한 Editor변수를 SharedPreferences.Editor editor(에디터 이름)로 선언한다
+>데이터를 저장할떄는 editor.put자료형(key,value)로 key값에 value를 저장하고 editor.commit()으로 파일에 저장한다
+>불러올떄는 preference이름.get자료형(key,"")로 value값을 불러온다.
